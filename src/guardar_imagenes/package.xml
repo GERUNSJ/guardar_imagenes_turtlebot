@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package>
-  <name>obtener_depth</name>
+  <name>guardar_imagenes</name>
   <version>0.0.0</version>
-  <description>The obtener_depth package</description>
+  <description>Paquete para obtener imagenes del turtlebot</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag --> 
   <!-- Example:  -->

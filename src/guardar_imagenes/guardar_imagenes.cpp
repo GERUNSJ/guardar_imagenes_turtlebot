@@ -88,8 +88,8 @@ int main(int argc, char **argv)
     ros::Subscriber suscriptor_depth;
     ros::Subscriber suscriptor_color;
 
-    suscriptor_depth = nh.subscribe("/camera/depth_registered/image_raw", 1, &retorno_depth);
-    suscriptor_color = nh.subscribe("/camera/rgb/color/image_raw"), 1, &retorno_color);
+    suscriptor_depth = nh.subscribe("/camera/depth_registered/hw_registered/image_rect_raw", 1, &retorno_depth);
+    suscriptor_color = nh.subscribe("/camera/rgb/image_color", 1, &retorno_color);
 
     ROS_INFO_STREAM("Apretar enter para guardar las imagenes\n");
     
