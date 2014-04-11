@@ -62,7 +62,7 @@ void retorno_color(const sensor_msgs::Image& msg)
 
 	char file1[100];
 	char file2[100];
-	cnt++;                               			//each time an image comes increment cnt
+	//cnt++;                               			//each time an image comes increment cnt
 	sprintf(file1,"imagen%d_color.png",cnt);		//Solo guarda en 16 bits si es png o tiff 
 	sprintf(file2,"imagen%d_color.tiff",cnt);        
 
