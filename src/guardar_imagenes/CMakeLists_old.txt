@@ -9,7 +9,7 @@ project(guardar_imagenes)
 
 # Find the catkin build system, and any other packages on which we depend.
 find_package(OpenCV REQUIRED)
-find_package(catkin REQUIRED COMPONENTS roscpp cv_bridge sensor_msgs message_filters)
+find_package(catkin REQUIRED COMPONENTS roscpp cv_bridge sensor_msgs)
 
 
 # Declare our catkin package.
