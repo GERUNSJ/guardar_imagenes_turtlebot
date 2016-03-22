@@ -1,4 +1,4 @@
-/*Este es un nodo de ROS Indigo para guardar imagenes de /camera/depth_registered/image_rect_raw
+/* Este es un nodo de ROS Indigo para guardar imagenes de /camera/depth_registered/image_rect_raw
  * y de /camera/rgb/color/image_rect_raw de un Turtlebot1 para luego procesarlas con otro programa. 
  * Las de profundidad se guardan como unsigned int de 16 bits 
  * y 1 canal, las de color se guardan como unsigned int de 8 bits en 3 canales.
