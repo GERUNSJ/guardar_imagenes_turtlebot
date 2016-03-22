@@ -158,8 +158,8 @@ int main(int argc, char** argv)
 		
 		else if( c == 'b' )
 		{
-			unsigned int cntb = 1;
-			while( cntb <= 300 )
+			unsigned int cnt_init = cnt;
+			while( cnt - cnt_init < 300 )
 			{
 				ros::spinOnce();
 			}
