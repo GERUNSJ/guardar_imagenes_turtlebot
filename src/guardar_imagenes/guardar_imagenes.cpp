@@ -67,7 +67,7 @@ void callback( const sensor_msgs::ImageConstPtr& msg_rgb , const sensor_msgs::Im
 		png_parameters.push_back( CV_IMWRITE_PNG_COMPRESSION );
 		png_parameters.push_back( 0 );
 		
-		cv::imwrite( file_rgb , mat_depth, png_parameters );
+		cv::imwrite( file_rgb , mat_rgb, png_parameters );
 		cv::imwrite( file_depth, mat_depth, png_parameters );
 		
 		cnt++;
@@ -100,7 +100,7 @@ int main(int argc, char** argv)
 // 	subscriber_rgb = nh.subscribe("/camera/rgb/image_color", 1 );
 	
 	message_filters::Subscriber<sensor_msgs::Image> subscriber_depth( nh , "/camera/depth_registered/hw_registered/image_rect_raw" , 1 );
-	message_filters::Subscriber<sensor_msgs::Image> subscriber_rgb( nh , "/camera/rgb/image_color" , 1 );
+	message_filters::Subscriber<sensor_msgs::Image> subscriber_rgb( nh , "/camera/rgb/image_rect_color" , 1 );
 
   //typedef sync_policies::ExactTime<Image, CameraInfo> MySyncPolicy;
 #ifdef EXACT
