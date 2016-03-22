@@ -9,7 +9,7 @@ project(guardar_imagenes)
 
 # Find the catkin build system, and any other packages on which we depend.
 find_package(OpenCV REQUIRED)
-find_package(catkin REQUIRED COMPONENTS roscpp cv_bridge sensor_msgs message_filters)
+find_package(catkin REQUIRED COMPONENTS roscpp cv_bridge sensor_msgs message_filters )
 
 
 # Declare our catkin package.
@@ -19,9 +19,11 @@ catkin_package()
 include_directories(include ${catkin_INCLUDE_DIRS})
 
 # Declare the executable, along with its source files.
-add_executable(guardar_imagenes guardar_imagenes.cpp)
+add_executable(guardar_imagenes guardar_imagenes.cpp pepito.cpp)
+
 
 # Specify libraries against which to link.
 target_link_libraries(guardar_imagenes ${catkin_LIBRARIES})
 target_link_libraries(guardar_imagenes ${OpenCV_LIBS})
+#target_link_libraries(guardar_imagenes pepito )
 

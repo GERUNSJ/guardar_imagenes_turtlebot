@@ -28,6 +28,8 @@
 #include <message_filters/subscriber.h>
 #include <message_filters/synchronizer.h>
 
+#include "pepito.hpp"
+
 
 /* La política de sincronización exacta NO FUNCIONA para los topics seleccionados, ya 
  * que la Kinect o sus drivers no los están publicando con la misma marca temporal.
@@ -116,6 +118,8 @@ void callback( const sensor_msgs::ImageConstPtr& msg_rgb , const sensor_msgs::Im
 
 int main(int argc, char** argv)
 {
+	funcion_pepito();
+	
 	// Initialize the ROS system and become a node.
   ros::init(argc, argv, "guardar_imagenes");
   ros::NodeHandle nh;
