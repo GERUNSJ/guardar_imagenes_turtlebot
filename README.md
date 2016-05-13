@@ -9,7 +9,7 @@ cercanas en el tiempo.
 
 LAS IMAGENES SE GUARDAN ADONDE SE EJECUTE EL NODO.
 
-*Creado por Fabricio Emder y Pablo Aguado en el 2016*
+*Creado por [Fabricio Emder](https://github.com/elector102) y [Pablo Aguado](https://github.com/aguadopd) en el 2016*
 
 **Ingrese 'a' para guardar un par de imágenes o 'b' para guardar 300 imágenes**
 
@@ -33,7 +33,7 @@ RGB images are saved as 3 channel 8 bit unsigned int PNGs (CV_8UC3).
 A synchronized subscriber is used, for saving the pair of images that are most closer in time.
 THE IMAGES ARE SAVED WHEREVER THE NODE IS RUN.
 
-*Created by Fabricio Emder and Pablo Aguado - 2016*
+*Created by [Fabricio Emder](https://github.com/elector102) y [Pablo Aguado](https://github.com/aguadopd) - 2016*
 
 **Enter 'a' to save a pair of images or 'b' to automatically save 300 images**
 
